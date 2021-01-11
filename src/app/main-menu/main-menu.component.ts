@@ -33,7 +33,7 @@ export class MainMenuComponent implements OnInit {
 			this.selectedIndex = Math.max(0, this.selectedIndex -1 );
 		}
 		if(arg == 'down') {
-			this.selectedIndex = Math.min(this.list.length, this.selectedIndex +1 );
+			this.selectedIndex = Math.min(this.list.length-1, this.selectedIndex +1 );
 		}
 	}
 

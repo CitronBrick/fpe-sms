@@ -1,7 +1,7 @@
 
 <div class="screen">
-<div *ngFor="let msg of messageList">
-	<div class="msg" *ngIf="isInboxActive() == msg.inbox">
+<div *ngFor="let msg of messageList; index as i">
+	<div class="msg" *ngIf="isInboxActive() == msg.inbox" [class.selected]="selectedIndex==i">
 		<h3>{{msg.sender}}</h3>
 		<p>{{msg.time.toLocaleTimeString()}}</p>
 		<p>{{(msg.text | slice :0 :30) + '...' }}</p>

@@ -15,6 +15,7 @@ export class FpeMessageListComponent implements OnInit {
 
 	messageList : Message[] = [];
 	view : CurrentView = CurrentView.INBOX;
+	selectedIndex: number = 0;
 
 	constructor(private mss :MessageStorageService , private cvs: CurrentViewService) {
 		mss.message$.subscribe((msg) => {
@@ -38,6 +39,12 @@ export class FpeMessageListComponent implements OnInit {
 		}
 		if(arg == 'selectLeft') {
 			
+		}
+		if(arg=='up') {
+			this.selectedIndex = Math.max(0, this.selectedIndex-1);
+		}
+		if(arg=='down') {
+			this.selectedIndex = Math.min(this.messageList.length - 1, this.selectedIndex+1);
 		}
 	}
 

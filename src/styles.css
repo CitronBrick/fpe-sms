@@ -14,6 +14,16 @@ h1 {
 	color: #111;
 }
 
+article {
+	font-family:  Tahoma;
+	font-size: 19px;
+	width: 530px;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 30px;
+	margin-top: 30px;
+}
+
 .phone {
 	background-color: NavajoWhite;
 }
@@ -29,6 +39,8 @@ h1 {
 }
 
 footer {
+	padding: 1px 5px;
+	box-sizing: border-box;
 	display: flex;
 	background-color: DarkKhaki;
 	color: white;
