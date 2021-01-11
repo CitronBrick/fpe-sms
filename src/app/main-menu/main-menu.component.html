@@ -1,0 +1,9 @@
+<div *ngFor="let o of list; index as i" [class.selected]="selectedIndex == i" >{{o.text}}</div>
+
+<footer>
+	<div>Select</div>
+</footer>
+
+<fpe-toppad (emitter)="handleTopPadClick($event)"></fpe-toppad>
+
+

@@ -1,0 +1,9 @@
+export enum CurrentView {
+
+	INBOX='INBOX',
+	OUTBOX='OUTBOX',
+	MAIN='MAIN',
+	COMPOSE='COMPOSE',
+	CHOOSE_RECEIVER='CHOOSE_RECEIVER'
+
+}

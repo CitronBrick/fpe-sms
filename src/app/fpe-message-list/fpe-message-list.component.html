@@ -1,0 +1,15 @@
+
+<div *ngFor="let msg of messageList">
+	<div class="msg" *ngIf="isInboxActive() == msg.inbox">
+		<h3>{{msg.sender}}</h3>
+		<p>{{msg.time.toLocaleTimeString()}}</p>
+		<p>{{(msg.text | slice :0 :30) + '...' }}</p>
+	</div>
+</div>
+
+<footer>
+	<div>View</div>
+	<div>Main</div>
+</footer>
+
+<fpe-toppad (emitter)="handleTopPadClick($event)"></fpe-toppad>

@@ -1,0 +1,20 @@
+<h1>Message App</h1>
+
+<p>{{currentView}}</p>
+
+<div class="phone">
+	
+	<fpe-main-menu *ngIf="currentView=='MAIN'"></fpe-main-menu>
+
+	<fpe-message-list *ngIf="currentView=='INBOX' ||  currentView == 'OUTBOX'"></fpe-message-list>
+
+
+
+	<fpe-compose *ngIf="currentView=='COMPOSE'"></fpe-compose>
+
+	<p *ngIf="currentView=='CHOOSE_RECEIVER'">CHOOSE_RECEIVER</p>
+	<fpe-choose-receiver *ngIf="currentView=='CHOOSE_RECEIVER'"></fpe-choose-receiver>
+
+	<fpe-keypad></fpe-keypad>
+
+</div>
