@@ -5,3 +5,7 @@ p {
 h3 {
 	margin: 8px 3px;
 }
+
+.screen {
+	overflow: auto;
+}

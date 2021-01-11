@@ -17,7 +17,7 @@ export class MessageStorageService {
 	constructor() {
 		this.message$ = new ReplaySubject<Message>();
 		//this.message$ = new BehaviorSubject<Message>();
-		[new Message('Hi! This is Sachin. This is my new number.', '023457218','me'),new Message('Your account balance is 2500 $', 'TRBD Bank','me'),  new Message('When is your train leaving ?','me','098235213',false)].forEach((m)=>{
+		[new Message('Hi! This is Sachin. This is my new number.', '023457218','me'),new Message('Your account balance is 2500 $', 'TRBD Bank','me'),  new Message('Where are you ?','me','Collegue 3'),new Message('When is your train leaving ?','me','098235213',false)].forEach((m)=>{
 			this.message$.next(m);
 		});
 		

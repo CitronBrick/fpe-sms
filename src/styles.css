@@ -36,6 +36,7 @@ article {
 	border: 3px solid peachpuff;
 	background-color: snow;
 	margin-bottom: 20px;
+	overflow: auto;
 }
 
 footer {
@@ -45,7 +46,8 @@ footer {
 	background-color: DarkKhaki;
 	color: white;
 	justify-content: space-between;
-	position: absolute;bottom: 0px;
+	position: sticky;
+	bottom: 0px;
 	width: 100%;
 }
 
