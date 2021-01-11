@@ -1,4 +1,5 @@
 
+<div class="screen">
 <div *ngFor="let msg of messageList">
 	<div class="msg" *ngIf="isInboxActive() == msg.inbox">
 		<h3>{{msg.sender}}</h3>
@@ -11,5 +12,6 @@
 	<div>View</div>
 	<div>Main</div>
 </footer>
+</div>
 
 <fpe-toppad (emitter)="handleTopPadClick($event)"></fpe-toppad>
